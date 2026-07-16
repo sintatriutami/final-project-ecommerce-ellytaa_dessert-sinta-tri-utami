@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Admin</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+Dashboard Admin
+
+</div>
+
+<nav>
+
+<ul>
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="admin-orders.html">
+
+Data Pesanan
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#" onclick="logout()">
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="dashboard">
+
+<div class="dashboard-card">
+
+<div class="dashboard-box">
+
+<h2 id="totalProduk">
+
+0
+
+</h2>
+
+<p>
+
+Total Produk
+
+</p>
+
+</div>
+
+<div class="dashboard-box">
+
+<h2 id="totalPesanan">
+
+0
+
+</h2>
+
+<p>
+
+Total Pesanan
+
+</p>
+
+</div>
+
+<div class="dashboard-box">
+
+<h2 id="pendapatan">
+
+Rp0
+
+</h2>
+
+<p>
+
+Total Pendapatan
+
+</p>
+
+</div>
+
+</div>
+
+<h2>
+
+Manajemen Produk
+
+</h2>
+
+<div class="admin-form">
+
+<input
+type="text"
+id="gambar"
+placeholder="Path Gambar (contoh: images/p16.jpg)">
+
+<input
+type="text"
+id="nama"
+placeholder="Nama Produk">
+
+<input
+type="number"
+id="harga"
+placeholder="Harga">
+
+<input
+type="text"
+id="kategori"
+placeholder="Kategori">
+
+<input
+type="number"
+id="stok"
+placeholder="Stok">
+
+<textarea
+id="deskripsi"
+placeholder="Deskripsi Produk"></textarea>
+
+<button
+class="btn"
+onclick="tambahProduk()">
+
+Tambah Produk
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nama</th>
+
+<th>Harga</th>
+
+<th>Kategori</th>
+
+<th>Stok</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="produkTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

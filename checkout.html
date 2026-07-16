@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Ellytaa Dessert</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+🍰 Ellytaa Dessert
+
+</div>
+
+</header>
+
+<section class="checkout">
+
+<h2 style="text-align:center;margin-bottom:30px;">
+
+Checkout Pesanan
+
+</h2>
+
+<form id="checkoutForm">
+
+<input
+type="text"
+id="nama"
+placeholder="Nama Lengkap"
+required>
+
+<input
+type="tel"
+id="telepon"
+placeholder="Nomor HP"
+required>
+
+<textarea
+id="alamat"
+placeholder="Alamat Lengkap"
+required></textarea>
+
+<select id="pembayaran" required>
+
+<option value="">
+
+Pilih Metode Pembayaran
+
+</option>
+
+<option>Transfer Bank</option>
+
+<option>DANA</option>
+
+<option>OVO</option>
+
+<option>GoPay</option>
+
+<option>COD</option>
+
+</select>
+
+<h2 id="totalCheckout">
+
+Rp 0
+
+</h2>
+
+<button
+type="submit"
+class="btn">
+
+Pesan Sekarang
+
+</button>
+
+</form>
+
+</section>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>
