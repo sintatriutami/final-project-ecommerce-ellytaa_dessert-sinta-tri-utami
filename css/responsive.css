@@ -1,0 +1,224 @@
+/* ===================================
+   RESPONSIVE.CSS
+   Ellytaa Dessert
+=================================== */
+
+/* ===============================
+TABLET
+=============================== */
+
+@media screen and (max-width:992px){
+
+header{
+    padding:15px 5%;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 5%;
+}
+
+.hero-text{
+    margin-bottom:40px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-text p{
+    font-size:17px;
+}
+
+.hero-image img{
+    width:80%;
+}
+
+.detail{
+    flex-direction:column;
+}
+
+.dashboard-card{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media screen and (max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-text p{
+    font-size:16px;
+    line-height:28px;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+.slide img{
+    height:220px;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.services{
+    grid-template-columns:1fr;
+}
+
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+.dashboard-card{
+    grid-template-columns:1fr;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box input,
+.search-box select{
+    width:100%;
+}
+
+.checkout{
+    margin:20px;
+    padding:25px;
+}
+
+.login-box{
+    width:90%;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.admin-form{
+    grid-template-columns:1fr;
+}
+
+.detail{
+    width:95%;
+}
+
+.card img{
+    height:220px;
+}
+
+}
+
+/* ===============================
+SMALL MOBILE
+=============================== */
+
+@media screen and (max-width:480px){
+
+.hero-text h1{
+    font-size:28px;
+}
+
+.hero-text p{
+    font-size:15px;
+}
+
+.btn{
+    width:100%;
+    display:block;
+    text-align:center;
+}
+
+.logo{
+    text-align:center;
+    font-size:22px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.featured h2{
+    font-size:28px;
+}
+
+.dashboard-box h2{
+    font-size:28px;
+}
+
+.dashboard-box p{
+    font-size:14px;
+}
+
+.success-box{
+    padding:25px;
+}
+
+.checkmark{
+    width:90px;
+    height:90px;
+    font-size:45px;
+}
+
+.wa-button{
+    width:55px;
+    height:55px;
+    font-size:28px;
+}
+
+}
+
+/* ===============================
+LARGE DESKTOP
+=============================== */
+
+@media screen and (min-width:1400px){
+
+.hero{
+    max-width:1400px;
+    margin:auto;
+}
+
+.featured,
+.services,
+.faq{
+    max-width:1400px;
+}
+
+}

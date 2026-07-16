@@ -1,0 +1,844 @@
+/* =====================================
+   ELLYTAA DESSERT
+   STYLE.CSS
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff8fb;
+    color:#333;
+}
+
+/* ===========================
+LOADING
+=========================== */
+
+#loading{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+#loading h1{
+    color:#ff4d88;
+    font-size:40px;
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff4d88;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff4d88;
+}
+
+#cartCount{
+    background:#ff4d88;
+    color:#fff;
+    border-radius:50%;
+    padding:2px 7px;
+    font-size:12px;
+    margin-left:5px;
+}
+
+/* ===========================
+HERO
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:52px;
+    color:#ff4d88;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:32px;
+    margin-bottom:35px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:500px;
+}
+
+/* ===========================
+BUTTON
+=========================== */
+
+.btn{
+    background:#ff4d88;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#ff1f70;
+}
+
+/* ===========================
+SLIDER
+=========================== */
+
+.promo-slider{
+    width:90%;
+    margin:30px auto;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+/* ===========================
+SERVICES
+=========================== */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    width:90%;
+    margin:80px auto;
+}
+
+.service{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.service i{
+    font-size:45px;
+    color:#ff4d88;
+    margin-bottom:20px;
+}
+
+.service h3{
+    margin-bottom:10px;
+}
+
+/* ===========================
+SECTION
+=========================== */
+
+.featured{
+    width:90%;
+    margin:80px auto;
+}
+
+.featured h2{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* ===========================
+PRODUCT GRID
+=========================== */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+CARD PRODUK
+=========================== */
+
+.card{
+    position:relative;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px 15px 5px;
+    font-size:22px;
+}
+
+.card p{
+    padding:5px 15px;
+}
+
+.card .buy{
+    width:calc(100% - 30px);
+    margin:15px;
+    padding:12px;
+    border:none;
+    background:#ff4d88;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card .buy:hover{
+    background:#ff1f70;
+}
+
+/* ===========================
+WISHLIST
+=========================== */
+
+.love{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.love:hover{
+    background:#ff4d88;
+    color:#fff;
+}
+
+/* ===========================
+BADGE DISKON
+=========================== */
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff1744;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ===========================
+SEARCH
+=========================== */
+
+.search-box{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+}
+
+.search-box input{
+    width:100%;
+    max-width:500px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.search-box select{
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+/* ===========================
+DETAIL PRODUK
+=========================== */
+
+.detail{
+    display:flex;
+    gap:50px;
+    width:90%;
+    margin:60px auto;
+    flex-wrap:wrap;
+}
+
+.detail-image{
+    flex:1;
+    min-width:300px;
+}
+
+.detail-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+.detail-info{
+    flex:1;
+    min-width:300px;
+}
+
+.detail-info h1{
+    color:#ff4d88;
+    margin-bottom:20px;
+}
+
+.detail-info h2{
+    margin:20px 0;
+}
+
+.detail-info ul{
+    margin:20px;
+    line-height:30px;
+}
+
+.qty{
+    margin:25px 0;
+}
+
+.qty input{
+    width:80px;
+    padding:10px;
+    text-align:center;
+}
+
+/* ===========================
+KERANJANG
+=========================== */
+
+#cart-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+#totalHarga{
+    margin-top:40px;
+    text-align:center;
+    color:#ff4d88;
+    font-size:32px;
+}
+
+/* ===========================
+CHECKOUT
+=========================== */
+
+.checkout{
+    max-width:700px;
+    margin:60px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.checkout form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.checkout textarea{
+    resize:none;
+    height:120px;
+}
+
+#totalCheckout{
+    text-align:center;
+    color:#ff4d88;
+    margin:20px 0;
+    font-size:28px;
+}
+
+/* ===========================
+SUCCESS PAGE
+=========================== */
+
+.success{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#fff5f8;
+    padding:30px;
+}
+
+.success-box{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    max-width:550px;
+    width:100%;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.checkmark{
+    width:120px;
+    height:120px;
+    background:#4CAF50;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    margin:0 auto 25px;
+}
+
+.success h1{
+    color:#ff4d88;
+    margin-bottom:20px;
+}
+
+.success p{
+    margin:12px 0;
+    line-height:28px;
+}
+
+/* ===========================
+FAQ
+=========================== */
+
+.faq{
+    width:90%;
+    margin:80px auto;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ff4d88;
+}
+
+.faq-item{
+    margin-bottom:15px;
+}
+
+.faq-btn{
+    width:100%;
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:18px;
+    text-align:left;
+    cursor:pointer;
+    border-radius:10px;
+    font-size:17px;
+}
+
+.faq-content{
+    display:none;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:0 0 10px 10px;
+    padding:18px;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+    background:#ff4d88;
+    color:#fff;
+    padding:50px 8%;
+    margin-top:80px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.footer-grid h3{
+    margin-bottom:15px;
+}
+
+.footer-grid p{
+    margin:10px 0;
+}
+
+footer hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.3);
+}
+
+.copyright{
+    text-align:center;
+}
+
+/* ===========================
+WHATSAPP
+=========================== */
+
+.wa-button{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.wa-button:hover{
+    transform:scale(1.1);
+}
+
+/* ===========================
+LOGIN ADMIN
+=========================== */
+
+.login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#fff5f8;
+}
+
+.login-box{
+    width:400px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.login-box h2{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* ===========================
+DASHBOARD ADMIN
+=========================== */
+
+.dashboard{
+    width:90%;
+    margin:50px auto;
+}
+
+.dashboard-card{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.dashboard-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.dashboard-box h2{
+    color:#ff4d88;
+    font-size:35px;
+}
+
+.dashboard-box p{
+    margin-top:10px;
+}
+
+/* ===========================
+TABLE
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    margin-top:30px;
+}
+
+table th{
+    background:#ff4d88;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+/* ===========================
+ADMIN FORM
+=========================== */
+
+.admin-form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin:30px 0;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.edit{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.delete{
+    background:#F44336;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.edit:hover{
+    background:#43A047;
+}
+
+.delete:hover{
+    background:#D32F2F;
+}
+
+/* ===========================
+PRINT
+=========================== */
+
+@media print{
+
+header,
+footer,
+.btn,
+.wa-button{
+    display:none;
+}
+
+body{
+    background:white;
+}
+
+.success-box{
+    box-shadow:none;
+}
+
+}
+
+/* ABOUT TOKO */
+
+.about{
+    padding:80px 8%;
+    background:#fff7f2;
+}
+
+
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+
+.about-image{
+    flex:1;
+}
+
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+
+.about-text{
+    flex:1;
+}
+
+
+.about-text h2{
+    font-size:35px;
+    color:#d26a8a;
+    margin-bottom:20px;
+}
+
+
+.about-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+
+
+.vision-mission{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+.vision,
+.mission{
+
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+.vision h3,
+.mission h3{
+
+    color:#d26a8a;
+
+}
+
+
+@media(max-width:768px){
+
+.about-container{
+
+    flex-direction:column;
+
+}
+
+
+.vision-mission{
+
+    grid-template-columns:1fr;
+
+}
+
+}
